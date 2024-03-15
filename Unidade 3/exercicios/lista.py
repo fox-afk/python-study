@@ -37,8 +37,8 @@ print("nome de motos:"+ nomes_motos[3])
 #que você gostaria de convidar para jantar. Em seguida, utilize sua lista para
 #exibir uma mensagem para cada pessoa, convidando-a para jantar.
 
-lista_pessoas=['jobs','jack','ryan']
-print(lista_pessoas)
+lista_pessoas_convidados=['jobs','jack','ryan']
+print(lista_pessoas_convidados)
 #3.5 – Alterando a lista de convidados: Você acabou de saber que um de seus
 # convidados não poderá comparecer ao jantar, portanto será necessário enviar
 # um novo conjunto de convites. Você deverá pensar em outra pessoa para
@@ -53,8 +53,8 @@ print(lista_pessoas)
 
 
 
-print(lista_pessoas_convidada=['a','b'])
-print(lista_pessoas_presentes=['c','d'])
+del lista_pessoas_convidados[1]  # eliminei um item da lista
+print(lista_pessoas_convidados)   # exibe quem ira comparecer
 
 
 # 3.6 – Mais convidados: Você acabou de encontrar uma mesa de jantar maior,
@@ -62,14 +62,16 @@ print(lista_pessoas_presentes=['c','d'])
 # para o jantar.
 #                                  • Comece com seu programa do Exercício 3.4 ou do Exercício 3.5. Acrescente
 #                                      uma instrução print no final de seu programa informando às pessoas que
-#                                                                   v ocê encontrou uma mesa de jantar maior.
+#                                                                   você encontrou uma mesa de jantar maior.
 
 #                                 • Utilize insert() para adicionar um novo convidado no início de sua lista.
 #                                   • Utilize insert() para adicionar um novo convidado no meio de sua lista.
 #                                  • Utilize append() para adicionar um novo convidado no final de sua lista.
 #                • Exiba um novo conjunto de mensagens de convite, uma para cada pessoaque está em sua lista.
-
-lista_pessoas
+lista_pessoas_convidados.insert(0,'pablo')
+lista_pessoas_convidados.insert(0,'lucas')
+lista_pessoas_convidados.insert(0,'eduardo')
+print(lista_pessoas_convidados)
 
 
 # 3.7 – Reduzindo a lista de convidados: Você acabou de descobrir que sua nova
@@ -86,3 +88,7 @@ lista_pessoas
 #                                  • Utilize del para remover os dois últimos nomes de sua lista, de modo que você
 #                                     tenha uma lista vazia. Mostre sua lista para  garantir que você realmente tem uma lista vazia no final de seu programa.
 
+
+del lista_pessoas_convidados[2]
+
+print(lista_pessoas_convidados)
