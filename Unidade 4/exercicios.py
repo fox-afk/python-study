@@ -107,9 +107,58 @@ print(cubos)
 #                                                Exiba a mensagem As pizzas favoritas de meu amigo são:; em seguida, utilizeum laço for para exibir a segunda lista. 
 #                                                Certifique-se de que cada pizza nova esteja armazenada na lista apropriada.
 
+# Lista original de pizzas
+pizzas=['queijo','frango com catupiry','calabresa']
+ # Cópia da lista original
+friend_pizzas=pizzas[:]
+# Adicionando uma nova pizza à lista original
+pizzas.append('4 queijo')
+# Adicionando uma pizza diferente à lista friend_pizzas
+friend_pizzas.append('pepperoni')
 
-friend_pizzas=['queijo','frango com catupiry','calabresa']
+# Exibindo as listas diferentes
+print("Minhas pizzas favoritas são:")
+for x in pizzas:
+    print(x)
 
+print("\nAs pizzas favoritas de meu amigo são:")
+for x in friend_pizzas:
+    print(x)
 
 #4.12 – Mais laços: Todas as versões de foods.py nesta seção evitaram usar laços for para fazer exibições a fim de economizar espaço. 
 # Escolha umaversão de foods.py e escreva dois laços for para exibir cada lista de comidas.
+    
+# Lista de alguns alimentos
+alimentos = ['maçã', 'banana', 'laranja', 'uva', 'abacaxi', 'morango', 'melancia']
+
+# monstra a lista original
+
+print("lista de alimentos:")
+for alimento in alimentos:
+    print(alimento)
+
+# monstra os 3 alimentos itens da lista
+    print("\nOs três primeiros itens da lista são:")
+    print(alimento[:3])
+
+# exibindo os itens do meio da lista
+    
+tamanho_lista= len(alimentos)
+meio = tamanho_lista //2
+inicio = meio - 1
+fim = meio + 2
+print("\nTrês itens do meio da lista são:")
+print(alimentos[inicio:fim])
+
+# 4.13 – Buffet: Um restaurante do tipo buffet oferece apenas cinco tipos básicos de comida. 
+# Pense em cinco pratos simples e armazene-os em uma tupla.
+#                                               • Use um laço for para exibir cada prato oferecido pelo restaurante.
+#                                               • Tente modificar um dos itens e cerifique-se de que Python rejeita a mudança.
+#                                               • O restaurante muda seu cardápio, substituindo dois dos itens com pratos
+#                                                   diferentes. Acrescente um bloco de código que reescreva a tupla e, em
+#                                                   seguida, use um laço for para exibir cada um dos itens do cardápio
+
+buffet=['camarão','mini-pizza','canape','cupcake','sorvete']
+print("Lista do menu do buffet:")
+for x in buffet:
+    print(x)
