@@ -154,8 +154,16 @@ print('Utilizando o metodo len:',len(lista_pessoas_convidados))
 
 # 3.10 – Todas as funções: Pensa em algo que você poderia armazenar em uma lista. 
 # Por exemplo, você poderia criar uma lista de montanhas, rios, países,cidades, idiomas ou qualquer outro item que quiser. 
-# Escreva um programa que crie uma lista contendo esses itens e então utilize cada função apresentada
-# neste capítulo pelo menos uma vez
+# Escreva um programa que crie uma lista contendo esses itens e então utilize cada função apresentada neste capítulo pelo menos uma vez
 
+montanhas=['k2','killimanjaro','kamet','everest','makalu']
+rios=['nilo','amazonas','congo','amur','yukon','ural']
+paises=['china','russia','australia','canada','mexico','uruguai']
+cidades=['hong kong','fortaleza','kyoto','moscou','vancouver','lima']
+idiomas=['português-br','espanhol','mandarim','inglês','português-pt','russo']
 
-
+print('\nLista de original montanhas:',montanhas)
+print('\nLista de original rios:',rios)
+print('\nLista de original paises:',paises)
+print('\nLista de original cidades:',cidades)
+print('\nLista de original idiomas:',idiomas)
