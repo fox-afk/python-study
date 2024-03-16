@@ -92,3 +92,70 @@ print(lista_pessoas_convidados)
 del lista_pessoas_convidados[2]
 
 print(lista_pessoas_convidados)
+
+# 3.8 – Conhecendo o mundo: Pense em pelo menos cinco lugares do mundo que você gostaria de visitar.
+
+#                   • Armazene as localidades em uma lista. Certifique-se de que a lista não esteja em ordem alfabética.
+#                   • Exiba sua lista na ordem original. Não se preocupe em exibir a lista de forma elegante; basta exibi-la como uma lista Python pura.
+#                   • Utilize sorted() para exibir sua lista em ordem alfabética, sem modificar a lista propriamente dita.
+#                   • Mostre que sua lista manteve sua ordem original exibindo-a.
+#                   • Utilize sorted() para exibir sua lista em ordem alfabética inversa sem alterar a ordem da lista original.
+#                   • Mostre que sua lista manteve sua ordem original exibindo-a novamente.
+#                   • Utilize reverse() para mudar a ordem de sua lista. Exiba a lista para mostrar que sua ordem mudou.
+#                   • Utilize reverse() para mudar a ordem de sua lista novamente. Exiba a lista para mostrar que ela voltou à sua ordem original.
+#                   • Utilize sort() para mudar sua lista de modo que ela seja armazenada em ordem alfabética. Exiba a lista para mostrar que sua ordem mudou.
+#                   • Utilize sort() para mudar sua lista de modo que ela seja armazenada em ordem alfabética inversa.
+#                                                                      Exiba a lista para mostrar que sua ordem mudou.
+
+lugares_conhecer=['kyoto','vancouver','parque yellowstone','coliseu','mar morto']
+
+print('Lista original:',lugares_conhecer)
+
+# Exibindo a lista em ordem alfabética sem modificá-la
+print("\nLista em ordem alfabética:")
+print(sorted(lugares_conhecer))
+# Mostrando que a lista original permanece inalterada
+print("\nLista original após ordenação")
+print(lugares_conhecer)
+
+# Exibindo a lista em ordem alfabética inversa sem modificar a lista original
+print("\nLista em ordem alfabética inversa:")
+print(sorted(lugares_conhecer, reverse=True))
+
+# Mostrando que a lista original permanece inalterada
+print("\nLista original após ordenação inversa:")
+print(lugares_conhecer)
+
+# Mudando a ordem da lista com reverse()
+lugares_conhecer.reverse()
+print("\nLista após reverse():")
+print(lugares_conhecer)
+
+# Revertendo a ordem da lista novamente
+lugares_conhecer.reverse()
+print("\nLista após reverse() novamente:")
+print(lugares_conhecer)
+
+# Ordenando a lista em ordem alfabética com sort()
+lugares_conhecer.sort()
+print("\nLista após sort():")
+print(lugares_conhecer)
+
+# Ordenando a lista em ordem alfabética inversa com sort()
+lugares_conhecer.sort(reverse=True)
+print("\nLista após sort() inverso:")
+print(lugares_conhecer)
+
+
+# 3.9 – Convidados para o jantar: Trabalhando com um dos programas dos Exercícios de 3.4 a 3.7 (páginas 80 e 81), use len() para exibir uma
+# mensagem informando o número de pessoas que você está convidando para o jantar.
+
+print('Utilizando o metodo len:',len(lista_pessoas_convidados))
+
+# 3.10 – Todas as funções: Pensa em algo que você poderia armazenar em uma lista. 
+# Por exemplo, você poderia criar uma lista de montanhas, rios, países,cidades, idiomas ou qualquer outro item que quiser. 
+# Escreva um programa que crie uma lista contendo esses itens e então utilize cada função apresentada
+# neste capítulo pelo menos uma vez
+
+
+
