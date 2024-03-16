@@ -163,7 +163,14 @@ cidades=['hong kong','fortaleza','kyoto','moscou','vancouver','lima']
 idiomas=['português-br','espanhol','mandarim','inglês','português-pt','russo']
 
 print('\nLista de original montanhas:',montanhas)
+print('Em ordem alfabetica nome de montanhas:',sorted(montanhas))
 print('\nLista de original rios:',rios)
+print('Em ordem alfabetica reversa:', sorted(rios,reverse=True))
 print('\nLista de original paises:',paises)
+paises.sort()
+print('lista usando o sort()',paises)
 print('\nLista de original cidades:',cidades)
+print('Usando o metodo len em cidades',len(cidades))
 print('\nLista de original idiomas:',idiomas)
+idiomas.reverse()
+print('usando o reverse:', idiomas)
