@@ -158,7 +158,24 @@ print(alimentos[inicio:fim])
 #                                                   diferentes. Acrescente um bloco de código que reescreva a tupla e, em
 #                                                   seguida, use um laço for para exibir cada um dos itens do cardápio
 
+
 buffet=['camarão','mini-pizza','canape','cupcake','sorvete']
 print("Lista do menu do buffet:")
 for x in buffet:
     print(x)
+
+# Tentando modificar um dos itens (isso deve gerar um erro)
+try:
+    buffet[0] = 'macarrão'
+except TypeError:
+    print("Erro: Não é possível modificar uma tupla.")
+
+
+# Substituindo dois dos itens com pratos diferentes
+buffet_pratos = buffet[:2] + ('frango', 'sopa') + buffet[4:]
+
+
+# Exibindo os pratos atualizados
+print("\nPratos atualizados oferecidos pelo restaurante:")
+for prato in buffet:
+    print(prato)
