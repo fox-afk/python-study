@@ -3,12 +3,25 @@
 #cidade em que ela vive. Você deverá ter chaves como first_name, last_name,
 #age e city. Mostre cada informação armazenada em seu dicionário.
 
+first_name={'bruce'}
+last_name={'wayne'}
+age={18}
+city={'gotham'}
+print(first_name)
+print(last_name)
+print(age)
+print(city)
+
 #6.2 – Números favoritos: Use um dicionário para armazenar os números favoritos
 # de algumas pessoas. Pense em cinco nomes e use-os como chaves em seu
 # dicionário. Pense em um número favorito para cada pessoa e armazene cada
 # um como um valor em seu dicionário. Exiba o nome de cada pessoa e seu
 # número favorito. Para que seja mais divertido ainda, faça uma enquete com
 #alguns amigos e obtenha alguns dados reais para o seu programa.
+
+number= {10,2,3,5,7,8,9}
+
+print('numeros favoritos:', number)
 
 # 6.3 – Glossário: Um dicionário Python pode ser usado para modelar um
 #dicionário de verdade. No entanto, para evitar confusão, vamos chamá-lo de
@@ -18,6 +31,10 @@
 # • Mostre cada palavra e seu significado em uma saída formatada de modo elegante. Você pode exibir a palavra seguida de dois-pontos e depois o seu
 # significado, ou apresentar a palavra em uma linha e então exibir seu significado indentado em uma segunda linha. Utilize o caractere de quebra
 # de linha (\n) para inserir uma linha em branco entre cada par palavrasignificado em sua saída
+
+glossario={'python':'saida','ruby':'entrada','js':'entrada','java':'entrada','c++':'game'}
+
+print("Este e o glassario:"+ glossario['c++'].title())  # se mudar o que esta dentro do [] muda o que ira monstrar 
 
 # 6.4 – Glossário 2: Agora que você já sabe como percorrer um dicionário com
 # um laço, limpe o código do Exercício 6.3 (página 148), substituindo sua
