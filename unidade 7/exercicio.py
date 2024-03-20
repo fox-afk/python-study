@@ -2,18 +2,28 @@
 # qual tipo de carro ele gostaria de alugar. Mostre uma mensagem sobre esse
 # carro, por exemplo, “Deixe-me ver se consigo um Subaru para você.”
 
+#carro = input("Qual carro deseja?") 
+#   print("\nÉ um " + carro + " que você deseja")
 # 7.2 – Lugares em um restaurante: Escreva um programa que pergunte ao usuário
 # quantas pessoas estão em seu grupo para jantar. Se a resposta for maior que
 # oito, exiba uma mensagem dizendo que eles deverão esperar uma mesa. Caso
 # contrário, informe que sua mesa está pronta.
-
+#number = int (input("Quantas pessoas? ")  )
+#if number >= 8:
+  #  print("Vão ter que esperar a mesa ficar pronta")
+#else:
+   # print("a mesa está pronta")
 # 7.3 – Múltiplos de dez: Peça um número ao usuário e, em seguida, informe se o
 # número é múltiplo de dez ou não
+    
+
+
 
 # 7.4 – Ingredientes para uma pizza: Escreva um laço que peça ao usuário para
 # fornecer uma série de ingredientes para uma pizza até que o valor 'quit' seja
 # fornecido. À medida que cada ingrediente é especificado, apresente uma
 # mensagem informando que você acrescentará esse ingrediente à pizza.
+    
 
 # 7.5 – Ingressos para o cinema: Um cinema cobra preços diferentes para os
 # ingressos de acordo com a idade de uma pessoa. Se uma pessoa tiver menos
@@ -22,6 +32,12 @@
 # dólares. Escreva um laço em que você pergunte a idade aos usuários e, então,
 # informe-lhes o preço do ingresso do cinema.
 
+ingresso= int(input("Digite a idade : "))
+
+if ingresso <= 3 :
+    print('Ingresso gratuito')
+if ingresso == 3  or ingresso  <= 12:
+    print('15 dolares')
 # 7.6 – Três saídas: Escreva versões diferentes do Exercício 7.4 ou do Exercício
 # 7.5 que faça o seguinte, pelo menos uma vez: 
 #   • use um teste condicional na instrução while para encerrar o laço; 
@@ -38,7 +54,7 @@
 # sanduíche de atum. À medida que cada sanduíche for preparado, transfira-o
 # para a lista de sanduíches prontos. Depois que todos os sanduíches estiverem
 # prontos, mostre uma mensagem que liste cada sanduíche preparado.
-
+sandwich_orders=[]
 # 7.9 – Sem pastrami: Usando a lista sandwich_orders do Exercício 7.8, garanta
 # que o sanduíche de 'pastrami' apareça na lista pelo menos três vezes.
 # Acrescente um código próximo ao início de seu programa para exibir uma
