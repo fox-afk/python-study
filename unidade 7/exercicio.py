@@ -31,13 +31,17 @@
 # ingresso custará 10 dólares; se tiver mais de 12 anos, o ingresso custará 15
 # dólares. Escreva um laço em que você pergunte a idade aos usuários e, então,
 # informe-lhes o preço do ingresso do cinema.
-
+print('menos de 3 anos entrada gratuita')
+print('3 e 12 anos custa 10 dolares')
+print('mais de 12 anos custa 15 dolares')
 ingresso= int(input("Digite a idade : "))
 
-if ingresso <= 3 :
+if ingresso < 3 :
     print('Ingresso gratuito')
 if ingresso == 3  or ingresso  <= 12:
-    print('15 dolares')
+    print('10 dolares dolares')
+if ingresso > 12:
+    print('custa 15 dolares')
 # 7.6 – Três saídas: Escreva versões diferentes do Exercício 7.4 ou do Exercício
 # 7.5 que faça o seguinte, pelo menos uma vez: 
 #   • use um teste condicional na instrução while para encerrar o laço; 
