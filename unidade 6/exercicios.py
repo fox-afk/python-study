@@ -59,6 +59,9 @@ for key, value in glossario2.items():
 
 rios={'nilo':'egito','amazonas':'brasil','ganges':'india'}
 
+for chave, valor in rios.items():
+    print( chave, ":", valor)
+
 # 6.6 – Enquete: Utilize o código em favorite_languages.py (página 150).
 
 # • Crie uma lista de pessoas que devam participar da enquete sobre linguagem
@@ -82,6 +85,10 @@ rios={'nilo':'egito','amazonas':'brasil','ganges':'india'}
 # chamada pets. Em seguida, percorra sua lista com um laço e, à medida que
 # fizer isso, apresente tudo que você sabe sobre cada animal de estimação.
 
+animals={'mia':'brito','barry':'araujo','vi':'pereira'}
+
+for chave , valor in animals.items():
+   print(chave, ":",valor) 
 # 6.9 – Lugares favoritos: Crie um dicionário chamado favorite_places. Pense em
 # três nomes para usar como chaves do dicionário e armazene de um a três
 # lugares favoritos para cada pessoa. Para deixar este exercício um pouco mais
@@ -89,6 +96,23 @@ rios={'nilo':'egito','amazonas':'brasil','ganges':'india'}
 # favoritos. Percorra o dicionário com um laço e apresente o nome de cada
 # pessoa e seus lugares favoritos.
 
+favorite_places={
+'brasil':{
+    'aereo':'cristo redentor',
+    'terra': 'jardim botanico',
+    'aquatico':'cataratas',},
+'eua':{
+    'aereo':'estatua liberdade',
+    'terra':'central park',
+    'aquatico':'cataratas niagara',},
+'japão':{
+    'aereo':'tokyo skytree',
+    'terra':'santuario meiji',
+    'aquatico':'itsukushima',},
+    }
+
+for aere, tera , agua in favorite_places.items():
+    print('lugares e pontos:'+ )
 # 6.10 – Números favoritos: Modifique o seu programa do Exercício 6.2 (página
 # 147) para que cada pessoa possa ter mais de um número favorito. Em seguida,
 # apresente o nome de cada pessoa, juntamente com seus números favoritos.
