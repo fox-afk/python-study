@@ -97,25 +97,18 @@ for chave , valor in animals.items():
 # pessoa e seus lugares favoritos.
 
 favorite_places={
-'brasil':{
-    'aereo':'cristo redentor',
-    'terra': 'jardim botanico',
-    'aquatico':'cataratas',},
-'eua':{
-    'aereo':'estatua liberdade',
-    'terra':'central park',
-    'aquatico':'cataratas niagara',},
-'japão':{
-    'aereo':'tokyo skytree',
-    'terra':'santuario meiji',
-    'aquatico':'itsukushima',},
-    }
-
-for aere, tera , agua in favorite_places.items():
-    print('lugares e pontos:'+ )
+ 'brasil':['cristo redentor','jardim botanico'],
+ 'eua':['estatua liberdade','central park','cataratas niagara'],
+ 'japão':['tokyo skytree','santuario meiji','itsukushima'],
+ }   
+for x , y in favorite_places.items():
+    print("\n"+ x.title() +"  e pontos turisticos:" )
+    for z in y:
+        print("\t "+ z.title())
 # 6.10 – Números favoritos: Modifique o seu programa do Exercício 6.2 (página
 # 147) para que cada pessoa possa ter mais de um número favorito. Em seguida,
 # apresente o nome de cada pessoa, juntamente com seus números favoritos.
+        
 
 # 6.11 – Cidades: Crie um dicionário chamado cities. Use os nomes de três
 # cidades como chaves em seu dicionário. Crie um dicionário com informações
@@ -124,8 +117,21 @@ for aere, tera , agua in favorite_places.items():
 # de cada cidade devem ser algo como country, population e fact. Apresente o
 # nome de cada cidade e todas as informações que você armazenou sobre ela.
 
+cities={
+    'japão':{
+        'country':'kyoto','population':'asian','fact':'tecnologia',},
+    'brasil':{
+        'country':'brasilia','population':'america do sul','fact':'dance',},
+    'espanha':{
+        'country':'madrid','population':'europa','fact':'churros',},      
+},
+for country,  population , fact in cities.items():
+    print("\nUsername: " + country)
+    full_name = population['country'] + " " + population['last']
+    fact = population['location']
+print("\n"+first_name)
+print("/tLocation: " + fact)
 # 6.12 – Extensões: Estamos trabalhando agora com exemplos complexos o
 # bastante para poderem ser estendidos de várias maneiras. Use um dos
 # programas de exemplo deste capítulo e estenda-o acrescentando novas chaves
-# e valores, alterando o contexto do programa ou melhorando a formatação da
-# saída.
+# e valores, alterando o contexto do programa ou melhorando a formatação da saída.
