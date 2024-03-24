@@ -26,7 +26,7 @@ numbers_favorites= {
     'daniel':'5',}
 
 for name , numero in numbers_favorites.items():
-    print('\n',name.title(), + numero.title()) 
+    print(name+ numero) 
     
 
 # 6.3 – Glossário: Um dicionário Python pode ser usado para modelar um
@@ -119,13 +119,37 @@ for x , y in favorite_places.items():
 # 147) para que cada pessoa possa ter mais de um número favorito. Em seguida,
 # apresente o nome de cada pessoa, juntamente com seus números favoritos.
         
-
+numbers_favorites2= {
+    'ben':['10','24'],
+    'gwen':['2','77'],
+    'mary':['3','40'],
+    'fiji':['8','22'],
+            }
+for name , numero2 in numbers_favorites2.items():
+    print( name +" numeros favoritos:" )
+    for xx in numero2:
+        print("\t" + xx.title())
 # 6.11 – Cidades: Crie um dicionário chamado cities. Use os nomes de três
 # cidades como chaves em seu dicionário. Crie um dicionário com informações
 # sobre cada cidade e inclua o país em que a cidade está localizada, a
 # população aproximada e um fato sobre essa cidade. As chaves do dicionário
 # de cada cidade devem ser algo como country, population e fact. Apresente o
 # nome de cada cidade e todas as informações que você armazenou sobre ela.
+
+cities={
+    'japão':{
+        'first':'kyoto','last':'asian','location':'tecnologia',},
+    'brasil':{
+        'first':'brasilia','last':'america do sul','location':'dance',},
+    'espanha':{
+        'first':'madrid','last':'europa','location':'churros',},      
+}
+for country,  population in cities.items:
+    print("\nUsername: " + country)
+    x= population['first'] + " " + population['last']
+    location= population['location']
+    print("\n"+ x )
+    print("/tLocation: " + x)
 
 
 # 6.12 – Extensões: Estamos trabalhando agora com exemplos complexos o

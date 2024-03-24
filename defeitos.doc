@@ -5,17 +5,3 @@
 # de cada cidade devem ser algo como country, population e fact. Apresente o
 # nome de cada cidade e todas as informações que você armazenou sobre ela
 
-cities={
-    'japão':{
-        'first':'kyoto','last':'asian','location':'tecnologia',},
-    'brasil':{
-        'first':'brasilia','last':'america do sul','location':'dance',},
-    'espanha':{
-        'first':'madrid','last':'europa','location':'churros',},      
-}
-for country,  population in cities.items:
-    print("\nUsername: " + country)
-    x= population['first'] + " " + population['last']
-    location= population['location']
-    print("\n"+ x )
-    print("/tLocation: " + x)
