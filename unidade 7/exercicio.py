@@ -59,7 +59,8 @@ if ingresso > 12:
 # sanduíche de atum. À medida que cada sanduíche for preparado, transfira-o
 # para a lista de sanduíches prontos. Depois que todos os sanduíches estiverem
 # prontos, mostre uma mensagem que liste cada sanduíche preparado.
-sandwich_orders=[]
+
+
 # 7.9 – Sem pastrami: Usando a lista sandwich_orders do Exercício 7.8, garanta
 # que o sanduíche de 'pastrami' apareça na lista pelo menos três vezes.
 # Acrescente um código próximo ao início de seu programa para exibir uma

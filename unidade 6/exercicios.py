@@ -19,9 +19,13 @@ print(city)
 # número favorito. Para que seja mais divertido ainda, faça uma enquete com
 #alguns amigos e obtenha alguns dados reais para o seu programa.
 
-number= {10,2,3,5,7,8,9}
+numbers_favorites= {
+    'a':'10',
+    'b':'2',
+    'c':'3',
+    'd':'5',}
 
-print('numeros favoritos:', number)
+print("numeros favoritos:"+ numbers_favorites['a'] + "." )
 
 # 6.3 – Glossário: Um dicionário Python pode ser usado para modelar um
 #dicionário de verdade. No entanto, para evitar confusão, vamos chamá-lo de
@@ -117,20 +121,7 @@ for x , y in favorite_places.items():
 # de cada cidade devem ser algo como country, population e fact. Apresente o
 # nome de cada cidade e todas as informações que você armazenou sobre ela.
 
-cities={
-    'japão':{
-        'country':'kyoto','population':'asian','fact':'tecnologia',},
-    'brasil':{
-        'country':'brasilia','population':'america do sul','fact':'dance',},
-    'espanha':{
-        'country':'madrid','population':'europa','fact':'churros',},      
-},
-for country,  population , fact in cities.items():
-    print("\nUsername: " + country)
-    full_name = population['country'] + " " + population['last']
-    fact = population['location']
-print("\n"+first_name)
-print("/tLocation: " + fact)
+
 # 6.12 – Extensões: Estamos trabalhando agora com exemplos complexos o
 # bastante para poderem ser estendidos de várias maneiras. Use um dos
 # programas de exemplo deste capítulo e estenda-o acrescentando novas chaves
