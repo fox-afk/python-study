@@ -20,12 +20,14 @@ print(city)
 #alguns amigos e obtenha alguns dados reais para o seu programa.
 
 numbers_favorites= {
-    'a':'10',
-    'b':'2',
-    'c':'3',
-    'd':'5',}
+    'andre':'10',
+    'bruce':'2',
+    'carlos':'3',
+    'daniel':'5',}
 
-print("numeros favoritos:"+ numbers_favorites['a'] + "." )
+for name , numero in numbers_favorites.items():
+    print('\n',name.title(), + numero.title()) 
+    
 
 # 6.3 – Glossário: Um dicionário Python pode ser usado para modelar um
 #dicionário de verdade. No entanto, para evitar confusão, vamos chamá-lo de
@@ -82,6 +84,10 @@ for chave, valor in rios.items():
 # armazene os três dicionários em uma lista chamada people. Percorra sua lista
 # de pessoas com um laço. À medida que percorrer a lista, apresente tudo que
 # você sabe sobre cada pessoa.
+
+pessoas1={}
+
+pessoas2={}
 
 #6.8 – Animais de estimação: Crie vários dicionários, em que o nome de cada
 # dicionário seja o nome de um animal de estimação. Em cada dicionário, inclua
