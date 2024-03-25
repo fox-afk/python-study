@@ -2,16 +2,15 @@
 #que você conheça. Armazene seu primeiro nome, o sobrenome, a idade e a
 #cidade em que ela vive. Você deverá ter chaves como first_name, last_name,
 #age e city. Mostre cada informação armazenada em seu dicionário.
-
-first_name={'bruce'}
-last_name={'wayne'}
-age={18}
-city={'gotham'}
-print(first_name)
-print(last_name)
-print(age)
-print(city)
-
+pessoa={
+    'first_name':'bruce',
+    'last_name':'wayne',
+    'age':18,
+    'city':'gotham',
+}
+print("informações sobre a pessoa: ")
+for key , value in pessoa.items():
+    print(f"{key} : {value}")
 #6.2 – Números favoritos: Use um dicionário para armazenar os números favoritos
 # de algumas pessoas. Pense em cinco nomes e use-os como chaves em seu
 # dicionário. Pense em um número favorito para cada pessoa e armazene cada
@@ -85,9 +84,38 @@ for chave, valor in rios.items():
 # de pessoas com um laço. À medida que percorrer a lista, apresente tudo que
 # você sabe sobre cada pessoa.
 
-pessoas1={}
+person1={
+'first_name':'bruce',
+    'last_name':'wayne',
+    'age':18,
+    'city':'gotham'}
 
-pessoas2={}
+print("Informações sobre a primeira pessoa:")
+for key, value in person1.items():
+    print(f"{key.title()}: {value}")
+person2 = {
+    'first_name': 'Alice',
+    'last_name': 'Smith',
+    'age': 25,
+    'city': 'Los Angeles',
+}
+
+person3 = {
+    'first_name': 'Bob',
+    'last_name': 'Johnson',
+    'age': 40,
+    'city': 'Chicago',
+}
+
+# Armazenando os três dicionários em uma lista chamada people
+people = [person1, person2, person3]
+
+# Percorrendo a lista de pessoas e apresentando suas informações
+print("\nInformações sobre as pessoas:")
+for person in people:
+    print("\n")
+    for key, value in person.items():
+        print(f"{key.title()}: {value}")
 
 #6.8 – Animais de estimação: Crie vários dicionários, em que o nome de cada
 # dicionário seja o nome de um animal de estimação. Em cada dicionário, inclua
@@ -138,11 +166,11 @@ for name , numero2 in numbers_favorites2.items():
 
 cities={
     'japão':{
-        'first':'kyoto','last':'asian','location':'tecnologia',},
+        'country':'kyoto','population':'asian','fact':'tecnologia',},
     'brasil':{
-        'first':'brasilia','last':'america do sul','location':'dance',},
+        'country':'brasilia','population':'america do sul','fact':'dance',},
     'espanha':{
-        'first':'madrid','last':'europa','location':'churros',},      
+        'country':'madrid','population':'europa','fact':'churros',},      
 }
 for country,  population in cities.items:
     print("\nUsername: " + country)
