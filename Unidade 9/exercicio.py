@@ -6,7 +6,7 @@
 #Crie uma instância chamada restaurant a partir de sua classe. Mostre os
 #dois atributos individualmente e, em seguida, chame os dois métodos.
 
-class Restaurant:
+class Restaurant0:
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
@@ -19,7 +19,7 @@ class Restaurant:
         print(f"O restaurante {self.restaurant_name} está aberto.")
 
 # Criando uma instância da classe Restaurant
-restaurant = Restaurant("Nome do Restaurante", "Tipo de Cozinha")
+restaurant = Restaurant0("Nome do Restaurante", "Tipo de Cozinha")
 
 # Mostrando os atributos individualmente
 print("Nome do Restaurante:", restaurant.restaurant_name)
@@ -45,9 +45,9 @@ class Restaurant2:
     def open_restaurant(self):
         print(f"{self.restaurant_name} está aberto!")
 
-restaurant3=Restaurant("pizza hot","USA")
-restaurant4=Restaurant("fogão dourado","brasil")
-restaurant5=Restaurant("clown joker","usa")
+restaurant3=Restaurant0("pizza hot","USA")
+restaurant4=Restaurant0("fogão dourado","brasil")
+restaurant5=Restaurant0("clown joker","usa")
 
 restaurant3.describe_restaurant()
 restaurant4.describe_restaurant()
@@ -90,6 +90,35 @@ bruce.describe_user()
 #incrementar o número de clientes servidos. Chame esse método com qualquer
 #número que você quiser e que represente quantos clientes foram atendidos, por
 #exemplo, em um dia de funcionamento.
+class Restaurant:
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+        self.number_served = 0  # novo atributo
+
+    def describe_restaurant(self):
+        print(f"Restaurante: {self.restaurant_name}")
+        print(f"Cuisine Type: {self.cuisine_type}")
+
+    def open_restaurant(self):
+        print(f"{self.restaurant_name} is open!")
+
+    def set_number_served(self, number):
+        self.number_served = number
+
+    def increment_number_served(self, increment):
+        self.number_served += increment
+
+# Criando uma instância da classe Restaurant
+restaurant = Restaurant("The Best Restaurant", "Italian")
+# Apresentando o número de clientes atendidos pelo restaurante
+print("Número de clientes atendidos inicialmente:", restaurant.number_served)
+# Alterando o número de clientes atendidos e exibindo-o novamente
+restaurant.set_number_served(50)
+print("Número de clientes atendidos após definir:", restaurant.number_served)
+# Incrementando o número de clientes atendidos e exibindo-o novamente
+restaurant.increment_number_served(20)
+print("Número de clientes atendidos após incrementar:", restaurant.number_served)
 
 #9.5 – Tentativas de login: Acrescente um atributo chamado login_attempts à
 #sua classe User do Exercício 9.3 (página 226). Escreva um método chamado
@@ -101,3 +130,4 @@ bruce.describe_user()
 #incrementado de forma apropriada e, em seguida, chame
 #reset_login_attempts(). Exiba login_attempts novamente para garantir que
 #seu valor foi reiniciado com 0.
+
