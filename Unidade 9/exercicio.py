@@ -278,9 +278,18 @@ my_restaurant.describe_restaurant()
 #241). Armazene as classes User, Privileges e Admin em um módulo. Crie um
 #arquivo separado e uma instância de Admin e chame show_privileges() para
 #mostrar que tudo está funcionando de forma apropriada.
+from admin import Admin
 
+# Criando uma instância de Admin
+admin_user = Admin("John", "Doe", 30, "Male")
+
+# Adicionando privilégios para o admin
+admin_user.privileges.privileges = ["pode adicionar post", "pode excluir post", "pode banir usuário"]
+
+# Mostrando os privilégios do admin
+admin_user.privileges.show_privileges()
 #9.12 – Vários módulos: Armazene a classe User em um módulo e as classes
-#Privileges e Admin em um módulo separado. Em outro arquivo, crie uma
+#Privileges e Admin em um módulo separado.gim outro arquivo, crie uma
 #instância de Admin e chame show_privileges() para mostrar que tudo continua
 #funcionando de forma apropriada.
 
@@ -289,6 +298,10 @@ my_restaurant.describe_restaurant()
 #glossário. Reescreva o programa usando a classe OrderedDict e certifique-se de
 #que a ordem da saída coincida com a ordem em que os pares chave-valor
 #foram adicionados ao dicionário.
+favorite_languages={'jen':'python','sarah':'c','edward':'ruby','phil':'python'}
+print("Linguagens mencionadas: ")
+for names,language in favorite_languages.items():
+    print(f"{names}:{language}")
 
 #9.14 – Dados: O módulo random contém funções que geram números aleatórios
 #de várias maneiras. A função randint() devolve um inteiro no intervalo
