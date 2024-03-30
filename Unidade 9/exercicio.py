@@ -235,6 +235,29 @@ admin.show_privileges()
 #Exercício 9.7. Transfira o método show_privileges() para essa classe. Crie
 #uma instância de Privileges como um atributo da classe Admin. Crie uma nova
 #instância de Admin e use seu método para exibir os privilégios.
+class Privileges:
+    def __init__(self, privileges):
+        self.privileges = privileges
+
+    def show_privileges(self):
+        print("Privileges:")
+        for privilege in self.privileges:
+            print("- " + privilege)
+
+
+class Admin:
+    def __init__(self, privileges):
+        self.privileges = Privileges(privileges)
+
+    def show_privileges(self):
+        self.privileges.show_privileges()
+
+
+# Exemplo de utilização:
+admin_privileges = ["pode adicionar post", "pode deletar post", "pode banir usuário"]
+
+admin_user = Admin(admin_privileges)
+admin_user.show_privileges()
 
 #9.9 – Upgrade de bateria: Use a última versão de electric_car.py desta seção.
 #Acrescente um método chamado upgrade_battery() na classe Battery. Esse
@@ -243,32 +266,14 @@ admin.show_privileges()
 #chame get_range() uma vez e, em seguida, chame get_range() uma segunda
 #vez após fazer um upgrade da bateria. Você deverá ver um aumento na
 #distância que o carro é capaz de percorrer.
-class Car:
-    def __init__(self, make, model, year): 
-        self.make = make
-        self.model =model 
-        self.year = year
-        self.odometer_reading = 0
-    def get_descriptive_name(self): 
-     long_name = str(self.year) + ' ' + self.make + ' ' + self.model 
-     return long_name.title()
-    def read_odometer(self): print("This car has " + str(self.odometer_reading) + " miles on it.")
-    def update_odometer(self, mileage): 
-        if mileage >=self.odometer_reading: self.odometer_reading = mileage 
-        else: 
-            print("You can't roll back an odometer!")
-    def increment_odometer(self, miles): self.odometer_reading += miles
-class ElectricCar(Car): 
-    def __init__(self, make, model, year):
-     super().__init__(make, model, year)
-my_tesla = ElectricCar('tesla', 'model s', 2016)
-print(my_tesla.get_descriptive_name())
 
 #9.10 – Importando Restaurant: Usando sua classe Restaurant mais recente,
 #armazene-a em um módulo. Crie um arquivo separado que importe Restaurant.
 #Crie uma instância de Restaurant e chame um de seus métodos para mostrar
 #que a instrução import funciona de forma apropriada.
-
+from restaurante import Restaurant0
+my_restaurant=Restaurant0("pizza hut","italiano")
+my_restaurant.describe_restaurant()
 #9.11 – Importando Admin: Comece com seu programa do Exercício 9.8 (página
 #241). Armazene as classes User, Privileges e Admin em um módulo. Crie um
 #arquivo separado e uma instância de Admin e chame show_privileges() para
